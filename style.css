@@ -1,0 +1,141 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+  }
+
+.header{
+	background-image:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../4.jpg);
+	min-height: 100vh;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	width: 100%;
+
+}
+nav{
+	display: flex;
+	position: center;
+	padding: 2% 6%;
+	justify-content: space-between;
+}
+nav img{
+	width: 150px;
+}
+.nv-link{
+	flex: 1;
+	text-align: right;
+}
+.nv-link ul li{
+	position: relative;
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+}
+.nv-link ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+}
+.header ul li a::after{
+	content: ' ';
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: block ;
+	margin: auto;
+	transition: 0.6s ease;
+
+}
+.header ul li a:hover::after{
+	width: 100%;
+	margin: auto;
+}
+
+.text{
+	width: 90%;
+	color: #000;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.text p{
+	margin: 10px 0px 40px;
+	font-size: 25px;
+}
+
+.text1 {
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 10px 34px;
+	font-size: 15px;
+	position: relative;
+	cursor: pointer;
+	background: transparent;
+}
+
+.text h1{
+	font-size: 62px;
+    
+}
+
+.text1:hover{
+	border: 1px solid #f44336;
+	background: #f44336;
+	transition: 1s;
+}
+nav .material-icons-outlined{
+	display: none;
+
+
+}
+@media(max-width: 700px){
+	.text h1{
+		font-size: 20px;
+    }
+
+	.nv-link ul li{
+		display: block;
+		padding: 10px;
+	}
+			
+	.nv-link{
+		position: absolute;
+		background: #f44336;
+		height: 100vh;
+		width: 200px;
+		top: 0;
+		right: -200px;
+		text-align: left;
+		z-index: 2;
+		transition: 1s;
+	}
+	nav .material-icons-outlined{
+		display: block;
+		color: #fff;
+		margin: 10px;
+		font-size: 22px;
+		cursor: pointer;
+	}
+
+}
+
+
+/*-----course-----*/
+
+
+.speciality{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+h1{
+	font-size: 36px;
+	font-weight: 600;
+}
+
